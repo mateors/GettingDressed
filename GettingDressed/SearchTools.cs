@@ -28,7 +28,8 @@ namespace GettingDressed
             List<string> cmdList = command.Split(',').ToList();
             foreach (string cmd in cmdList)
             {
-                var isNumeric = int.TryParse(cmd, out var n);
+                int n;
+                var isNumeric = int.TryParse(cmd, out n);
                 if (isNumeric)
                 {
 
